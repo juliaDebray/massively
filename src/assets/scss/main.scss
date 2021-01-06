@@ -14,7 +14,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
-    transition: color 0.2s ease-in-out;
+    transition: color .2s ease-in-out;
 
     &:hover {
         color: #18bfef;
@@ -66,50 +66,44 @@ body {
 }
 
 .date {
-    font-size: 0.8rem;
+    font-size: .8rem;
     text-align: center;
 }
-
-
-
-
-
 
 /* NAVIGATION - START */
 
 nav {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.176);
+    background-color: rgba(255, 255, 255, .176);
     color: white;
     padding-right: 30px;
 
     #menu {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        flex-grow: 1;
-        height: 70px;
-        font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            flex-grow: 1;
+            height: 70px;
+            font-size: .8rem;
 
         li {
-        display: flex;
-        align-items: center;
-        height: 100%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, .212);
+            }
         }
 
-        li:hover {
-            background-color: rgba(255, 255, 255, 0.212);
-        }
-        
         a {
             padding: 30px;
-        }
 
-        a:hover {
-            color: white;
+            &:hover {
+                color: white;
+            }
         }
-
     }
 
     #icons {
@@ -130,9 +124,9 @@ nav {
 .button {
     border: 2px solid #212931;
     padding: 15px 40px;
-    font-size: 0.9rem;
+    font-size: .9rem;
     font-weight: 900;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: border-color .2s ease-in-out, color .2s ease-in-out;
 
     &:hover {
         border-color: #18bfef;
