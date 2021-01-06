@@ -51,16 +51,25 @@ body {
     color: white;
     max-width: 70%;
     margin: auto;
+
         h1 {
         font-size: 5.1rem;
         text-transform: uppercase;
         line-height: 1;
         }
+
         p {
             font-size: 1.3rem;
             font-style: italic;
         }
 }
+
+.date {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
 
 
 
@@ -152,22 +161,29 @@ article:nth-child(even) {
         "article5 article6";
 }
 
-.date {
-    font-size: 0.8rem;
-    text-align: center;
-}
-
 .introduction {
-    display: flex;
-    flex-direction: column;
+    .date {
+        display: flex;
+        align-items: center;
+
+        &::before, &::after {
+            content: '';
+            border-top: 2px solid #eee;
+            flex-grow: 1;
+        }
+
+        span {
+            padding: 0 2rem;
+        }
+    }
 
     h2 {
         font-size: 4.1rem;
     }
 
-    p {
-    text-align: center;
-    font-style: italic;
+    p:not(.date) {
+        text-align: center;
+        font-style: italic;
     }
 }
 
