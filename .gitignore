@@ -1,4 +1,17 @@
-.history/
+# System Files
 .DS_Store
-modele
-src/assets/css
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Visual Studio Code
+.history/
+.vscode/
+
+##################
+# Project specific
+##################
+.cache/
+dist/
+modele/

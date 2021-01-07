@@ -1,5 +1,5 @@
-@import "./_fontawesome-all.min.scss";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import './icon';
 
 * {
     box-sizing:border-box;
@@ -92,7 +92,7 @@ nav {
             align-items: center;
             height: 100%;
             transition: background-color .2s ease-in-out;
-            
+
             &:hover {
                 background-color: rgba(255, 255, 255, .212);
             }
@@ -155,7 +155,7 @@ nav {
 article {
     padding: 40px;
     border-bottom: 2px solid #eeeeee;
-    
+
     p {
         text-align: justify;
     }
@@ -167,7 +167,7 @@ article:nth-child(even) {
 
 .articles {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "article1 article2"
         "article3 article4"
         "article5 article6";
@@ -201,7 +201,7 @@ article:nth-child(even) {
 
 #article1 {
     grid-area: "article1";
-} 
+}
 
 #article2 {
     grid-area: "article2";
@@ -209,7 +209,7 @@ article:nth-child(even) {
 
 #article3 {
     grid-area: "article3";
-} 
+}
 
 #article4 {
     grid-area: "article4";
@@ -217,7 +217,7 @@ article:nth-child(even) {
 
 #article5 {
     grid-area: "article5";
-} 
+}
 
 #article6 {
     grid-area: "article6";
