@@ -131,6 +131,18 @@ nav {
 
     &:hover {
         border-color: #18bfef;
+        color: #18bfef;
+    }
+
+    &[type="submit"] {
+    border-color: #909498;
+    color: #909498;
+    text-transform: uppercase;
+
+        &:hover {
+            border-color: #18bfef;
+            color: #18bfef;
+    }
     }
 }
 
