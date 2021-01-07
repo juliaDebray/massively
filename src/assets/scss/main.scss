@@ -135,6 +135,8 @@ nav {
     }
 
     &[type="submit"] {
+    font-size: inherit;
+    background-color: transparent;
     border-color: #909498;
     color: #909498;
     text-transform: uppercase;
